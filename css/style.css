@@ -1,0 +1,643 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common */
+*{
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable',sans-serif !important;
+    font-size: 16px;
+    color: #333;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.inner{
+    /* 1200px에 양쪽여백 20씩! */
+    width: 1160px;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+/* common 끝*/
+
+
+/* 메인배너 */
+.main_bn{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/projectDoc/main_bn.jpg');
+    background-repeat: no-repeat;
+    /* ★반응형 이미지 잘라서 넣기 */
+    background-size: cover;
+}    
+.main_inner{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left_contents{
+    width: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.left_contents .logo{
+    width: 100%;
+    margin: 210px 0 40px;
+    text-align: center;
+}
+.left_contents .logo img{
+    width: 150px;
+}
+.left_contents .main_txt{
+    width: 100%;
+    color: white;
+    line-height: 32px;
+}
+.left_contents .main_txt h1{
+    background-color: white;
+    color: #333;
+    padding: 5px 0;
+    border-radius: 30px;
+    text-align: center;
+}
+.left_contents .main_txt h2{
+    font-size: 22px !important;
+}
+.left_contents .main_txt p{
+    text-align: start;
+}
+.mockup{
+    width: 820px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 40px;
+}
+.mockup img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* 섹션1 - 오버뷰 */
+.sec1_overview{
+    width: 100%;
+    background: #fff8ef;
+    text-align: center;
+}
+.overview1,.overview2,.overview3{
+    height: 300px;
+}
+.overview1,.overview2{
+    margin-bottom: 30px;
+}
+.overview1>h1{
+    margin :10px 0 40px ;
+}
+.overview1>p{
+    line-height: 26px;
+}
+.overview2>h1{
+    margin-bottom: 40px;
+}
+.overview2 .before{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.overview2 .before .before_box{
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+    background-color: #4f3f33;
+    box-shadow: 1px 1px 5px #888;
+    padding: 30px;
+    flex-grow: 1;
+}
+.overview2 .before .before_box>img{
+    width: 60px;
+    margin-bottom: 30px;
+}
+.overview2 .before .before_box>p{
+    line-height: 26px;
+    color: white;
+} 
+.overview2 .before .before_box .gray{
+    color: #888;
+}
+.overview2 .source{
+    font-size: 10px;
+    font-weight: bold;
+    color: #888;
+    line-height: 30px;
+    padding-right: 20px;
+    text-align: right;
+}
+.overview3{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.overview3>p{
+    color: #4f3f33;
+    text-shadow: 2px 2px 2px #c4c4c4;
+    font-size: 30px;
+}
+.overview3>p>span{
+    color: #f87511;
+    font-weight: bold;
+}
+.overview3>img{
+    margin:30px 0 60px;
+}
+
+/* 섹션2 - 페르소나 */
+
+.sec2_persona{
+    width: 100%;
+}
+.persona_intro h1{
+    margin-bottom:30px;
+    background-color: #fff8ef;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+.persona_intro{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.persona_intro>p{
+    margin-top: 60px;
+}
+.person{
+    display: flex;
+    height: 300px;
+    text-align: center;
+}
+.person .img_area{
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+.person .img_area>img{
+    width: 310px;
+    height: 300px;
+}
+.person .img_area .img_txt>p{
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 32px;
+    color: white;
+}
+.person2 .img_area .img_txt>p{
+    margin-left: 0px;
+}
+.person .img_area .img_txt>.small{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #a78164;
+}
+.person .img_area .img_txt>.normal{
+    width: 185px;
+    background-color: #a78164;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #999;
+}
+.person1{
+    margin-bottom: 30px;
+}
+.person .p_txt{
+    width: 540px;
+    margin-left: 40px;
+    background: url('../images/projectDoc/persona_talk.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 30px;
+    position: relative;
+}
+.person .p_txt>p{
+    position: absolute;
+    top: 50%;
+    margin-top:-60px;
+    left: 50%;
+    margin-left: -196px;
+}
+.person .p_txt>p>span{
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+/* 섹션3 -프로젝트 목표, 타겟 */
+.sec3_goal{
+    width: 100%;
+    text-align: center;
+    background: url(../images/projectDoc/goal_bg.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sec3_goal>.inner>h3{
+    color: white;
+}
+.sec3_goal>p{
+    color: white;
+}
+.sec3_goal>h3{
+    color: white;
+}
+.goal_intro{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.goal_intro>h3{
+    color: white;
+}
+.goal_intro>h1{
+    margin: 10px 0 30px;
+    color: white;
+}
+.goal_intro>p{
+    color: white;
+}
+.goal_img{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.goal_img>li{
+    width: 360px;
+    height: 280px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+.goal_img>li>img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.goal_img>li>p{
+    margin-bottom: 20px;
+    color: white;
+}
+.goal_img>li>h3{
+    color: white;
+}
+.goal_img>li:last-child{
+    margin-right: 0;
+}
+.goal_end{
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #fff8ef;
+    border-radius: 50px;
+}
+.goal_end>p{
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 20px;
+    color: #333;
+}
+.goal_end>h3{
+    color: #333;
+    font-weight: bold;
+}
+
+/* 섹션4 = 플로우차트 */
+.sec4_flow{
+    width: 100%;
+    text-align: center;
+}
+.flow_intro{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+    background-color: #888;
+    line-height: 30px;
+}
+.flow_intro img{
+}
+
+/* 섹션5 - 스타일 가이드 */
+.sec5_style{
+    width: 100%;
+    text-align: center;
+    background-color: #fff8ef;
+}
+.style_intro{
+    /* background-color: #8d8d8d; */
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    line-height: 50px;
+    padding-top: 50px;
+
+}
+.style_intro>h1{
+    font-size: 30px;
+    margin-right: 50px;
+    line-height: 50px;
+}
+.style_intro>p{
+    font-size: 20px;
+    line-height: 40px;
+}
+.concept{
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 220px;
+    margin-bottom: 30px;
+    background: url('../images/projectDoc/concept_bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    line-height: 30px;
+    padding-top: 20px;
+
+}
+.style_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.style_content>li:first-child,
+.style_content>li:nth-child(2){
+    width: 560px;
+    height: 460px;
+    background-color: #888;
+    margin-bottom: 30px;
+}
+.style_content>li:nth-child(3),
+.style_content>li:nth-child(4){
+    width: 560px;
+    height: 560px;
+    background-color: #888;
+    margin-bottom: 30px;
+}
+.style_content>li:nth-child(5){
+    width: 660px;
+    height: 468px;
+    background-color: #888;
+}
+.style_content>li:nth-child(6){
+    width: 460px;
+    height: 468px;
+    background-color: #888;
+}
+.style_content>li:first-child,
+.style_content>li:nth-child(3),
+.style_content>li:nth-child(5){
+    margin-right: 40px;
+}
+/* 섹션6 - 디자인 시안 설명 */
+.sec6_explain{
+    width: 100%;
+    text-align: center;
+}
+.explain_intro{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+    background-color: #888;
+    line-height: 30px;
+}
+.ex_set{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.ex_set:last-child{
+    margin-bottom: 0;
+}
+.ex_set .ex_img{
+    width: 580px;
+    height: 273px;
+    margin-right: 40px;
+    background-color: #888;
+}
+.ex_set .ex_txt{
+    width: 540px;
+    height: 273px;
+    background-color: #888;
+}
+
+/* 섹션7 - 디자인 시안 (PC 스마트폰) */
+.sec7_design{
+    width: 100%;
+}
+.design_intro{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+    background-color: #888;
+    line-height: 30px;
+    text-align: center;
+}
+.img_wrap{
+    width: 100%;
+    text-align: center;
+}
+.design_pc{
+    width: 60%;
+    float: left;
+}
+.design_pc img{
+    width:60%;
+    height:auto;
+}
+.design_mobile{
+    width: 40%;
+    float: left;
+}
+.design_mobile img{
+    width:60%;
+    height:auto;
+}
+
+/* 섹션8. 목업 및 마무리 */
+.sec8_ending{
+    width: 100%;
+}
+.sec8_ending>.inner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url();
+}
+
+/* 푸터 */
+footer{
+    width: 100%;
+    padding: 30px 0;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff8ef;
+}
+
+ 
+
+/* 노트북 */
+@media all and (max-width:1250px){
+    /* common */
+    .inner{
+        /* 1200px에 양쪽여백 20씩! */
+        width:95%;
+    }
+    
+    /* 메인배너 */
+    .main_bn{
+        height: 100%;
+    }
+    .main_inner{
+        width: 800px;
+    }
+    .left_contents{
+        width: 50%;
+    }
+    .left_contents .logo{
+        margin: 40px 0 40px;
+    }
+    .mockup{
+        width: 80%;
+        margin-top: 60px;
+    }
+    .left_contents h1{
+        font-size: 1rem;
+    } 
+
+    /* 섹션1 - 오버뷰 */
+
+
+    /* 섹션2 - 페르소나 */
+    .person img{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+    /* 섹션3 -프로젝트 목표, 타겟 */
+    .goal_img{
+        width: 100%;
+        height: 100%;
+    }
+    .goal_img>li{
+        /* 비율 유지하도록!  */
+        width: 33.3333%;
+        height: 0;
+        padding-bottom: 33.3333%;
+    }
+    .goal_img img{
+        width: 100%;
+        height: auto;
+    }
+    /* 섹션4 - 플로우차트 */
+    
+    /* 섹션5 - 스타일 가이드 */
+
+    .style_content>li:first-child,
+    .style_content>li:nth-child(2){
+        width: 100%;
+        height: 230px;
+    }
+    .style_content>li:nth-child(3),
+    .style_content>li:nth-child(4){
+        width: 100%;
+        height: 330px;
+    }
+    .style_content>li:nth-child(5){
+        width: 100%;
+        height: 234px;
+        margin-bottom: 30px;
+    }
+    .style_content>li:nth-child(6){
+        width: 100%;
+        height: 234px;
+    }
+    .style_content>li:first-child,
+    .style_content>li:nth-child(3),
+    .style_content>li:nth-child(5){
+        margin-right: 0;
+    }
+
+    /* 섹션6 - 디자인 시안 설명 */
+    .sec6_explain{
+        width: 100%;
+        text-align: center;
+    }
+    .explain_intro{
+        width: 100%;
+        height: 220px;
+        margin-bottom: 30px;
+        background-color: #888;
+        line-height: 30px;
+    }
+    .ex_set{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .ex_set:last-child{
+        margin-bottom: 0;
+    }
+    .ex_set .ex_img{
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        background-color: #888;
+    }
+    .ex_set .ex_txt{
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        margin-bottom: 30px;
+        background-color: #888;
+    }
+
+    /* 섹션7 - 디자인 시안 (PC 스마트폰) */
+
+    /* 섹션8. 목업 및 마무리 */
+
+}
+
+/* ★가변폰트 */
+/* 태블릿 */
+@media all and (max-width:768px){
+
+}

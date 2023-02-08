@@ -1,0 +1,621 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 바디시작 */
+.main_bn{
+    margin-top: 282px;
+    background-image: url('../images/01.pc/02.subpage/01.brand/yumi.jpg');
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.main_bn .text{
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    top: 30%;
+    left: 20%;
+    color: white;
+}
+.text h1{
+    font-size: 30px;
+    margin: 60px 0px 60px 20px;
+}
+.text p{
+    font-size: 20px;
+    margin: 0px 0px 60px 20px;
+    line-height: 1.5;
+}
+.fade-in{
+    opacity: 0;
+}
+
+/* 섹션1. 슬로건 및 비전 */
+.story1{
+    width: 100%;
+}
+.slogan{
+    margin: 120px auto;
+    width: 100%;
+    text-align: center;
+}
+.slogan h2{
+    font-size: 30px;
+    font-family: 'Hahmlet-Regular';
+}
+.vertical_line{
+    border: 0.5px solid #4f3f3350;
+    width: 0px;
+    height: 100px;
+    margin: 60px auto;
+}
+.v_m{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 120px auto;
+}
+.v_m li:first-child{
+    margin-right: 100px;
+}
+.v_m .content{
+    background-image: url('../images/01.pc/02.subpage/v_m_bg.png');
+    width: 350px;
+    height: 300px;
+    position: relative;
+}
+.v_m .content h2{
+    position: absolute;
+    top: 25%;
+    right: 8px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.v_m .content p{
+    text-align: right;
+    position: absolute;
+    right: 8px;
+    top: 60%;
+    color: white;
+    font-size: 16px;
+}
+
+/* 섹션2. 스토리 이미지+텍스트 */
+.s_hd{
+    width: 100%;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 60px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background: url(../images/01.pc/02.subpage/02.brand_story/title_bg2.png) no-repeat;
+    background-size: cover;
+}
+.s_hd>p{
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+    margin: 0;
+    position: relative;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.story2{
+    width: 100%;
+    height: 1800px;
+}
+.story2-inner{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+/* 브랜드 스토리 본문 시작 */
+.s_img{
+    width: 585px;
+    height: 500px;
+    position: absolute;
+}
+.s_txt{
+    width: 585px;
+    height: 200px;
+    /* background-color: rgb(201, 201, 201); */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+}
+/* 효과 */
+@keyframes fadeInStoryL{
+    0%{
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+@keyframes fadeInStoryR{
+    0%{
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+.img1{
+    top: 120px;
+    left: 0;
+    animation: fadeInStoryL;
+    animation-duration: 1.5s;
+}
+.txt1{
+    top:120px;
+    right: 0;
+    animation: fadeInStoryR;
+    animation-duration: 1.5s;
+}
+.txt2{
+    top: 650px;
+    left: 0;
+    animation: fadeInStoryL;
+    animation-duration: 1.5s;
+}
+.img2{
+    top: 350px;
+    right: 0;
+    animation: fadeInStoryR;
+    animation-duration: 1.5s;
+}
+.img3{
+    top: 880px;
+    left: 0;
+    animation: fadeInStoryL;
+    animation-duration: 1.5s;
+}
+.txt3{
+    top: 880px;
+    right: 0;
+    animation: fadeInStoryR;
+    animation-duration: 1.5s;
+}
+.txt4{
+    top: 1450px;
+    left: 0;
+    flex-direction: column;
+    animation: fadeInStoryL;
+    animation-duration: 1.5s;
+}
+.txt4 h3{
+    color: #eb8a40;
+}
+.img4{
+    top:1110px;
+    right: 0;
+    animation: fadeInStoryR;
+    animation-duration: 1.5s;
+}
+
+/* 섹션3. 클린뷰티 */
+.clean_h1{
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin : 180px 0 60px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background: url(../images/01.pc/02.subpage/03.clean_beauty/clean_hd.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 24px;
+}
+.clean_h1 h1{
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.clean_b{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c_txt{
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    padding: 50px;
+    margin-right: 100px;
+    box-sizing: border-box;
+}
+.c_txt h1{
+    padding-bottom: 60px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.c_txt ul{
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.c_txt li{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.c_icon{
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(25, 177, 126, 0.377);
+    border-radius: 100%;
+    position: relative;
+}
+.c_icon img{
+    width: 80px;
+    height: 80px;
+}
+
+/* 아이콘들이 회전할 수 있도록! */
+
+.c_icon img:first-child{
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    animation: myOrbit 15s linear infinite;
+}
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translate(0,-140px) rotate(0deg); }
+    to   { transform: rotate(360deg) translate(0,-140px) rotate(-360deg); }
+}
+.c_icon img:nth-child(2){
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    animation: myOrbit2 15s linear infinite;
+}
+@keyframes myOrbit2 {
+    from { transform: rotate(0deg) translate(110px,110px) rotate(0deg); }
+    to   { transform: rotate(360deg) translate(110px,110px) rotate(-360deg); }
+}
+.c_icon img:nth-child(3){
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    animation: myOrbit3 15s linear infinite;
+}
+@keyframes myOrbit3 {
+    from { transform: rotate(0deg) translate(-115px,115px) rotate(0deg); }
+    to   { transform: rotate(360deg) translate(-115px,115px) rotate(-360deg); }
+}
+.c_icon h1{
+    position: absolute;
+    top:30%;
+    left: 30%;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(25, 177, 126);
+    font-style: italic;
+}
+
+/* 섹션4. 천연 주재료 */
+.ing_h1{
+    margin-top: 60px;
+    text-align: center;
+    padding: 60px 0 30px;
+}
+.ingredient{
+    width: 2000px;
+    height: 400px;
+    margin: 0 auto;
+}
+.ing_wrap{
+    width:2000px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+}
+.ing_wrap img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-right: 10vw;
+}
+
+/* 태블릿 */
+@media all and (max-width:1250px){
+    .main_bn{
+        margin-top: 100px;
+    }
+    .main_bn .text{
+        left: 2%;
+    }
+    /* 섹션1. 슬로건 및 비전 */
+    .slogan{
+        margin: 60px auto;
+    }
+    .slogan h2{
+        font-size: 3.5vw;
+    }
+    .vertical_line{
+        height: 50px;
+        margin: 30px auto;
+    }
+    .v_m{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 120px 0;
+    }
+    .v_m li:first-child{
+        margin-right: 60px;
+    }
+    .v_m .content h2{
+        position: absolute;
+        top: 25%;
+        right: 8px;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
+    .v_m .content p{
+        text-align: right;
+        position: absolute;
+        right: 8px;
+        top: 60%;
+        color: white;
+        font-size: 16px;
+    }
+
+    /* 섹션2.스토리 */
+    .story2-inner{
+        width: 800px;
+    }
+    .s_hd{
+        margin-bottom: 120px;
+    }
+    .story2{
+        width: 100%;
+        height: auto;
+    }
+
+    /* 브랜드 스토리 본문 시작 */    
+    .s_img{
+        all: unset;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .s_img img{
+        width: 80%;
+    }
+    .s_txt{
+        all: unset;
+        width: 100%;
+        height: 120px;
+        font-size: 18px;
+        line-height: 28px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .img1{
+        animation: fadeInStoryL;
+        animation-duration: 1.5s;
+    }
+    .txt1{
+        animation: fadeInStoryR;
+        animation-duration: 1.5s;
+    }
+    .img2{
+        animation: fadeInStoryL;
+        animation-duration: 1.5s;
+    }
+    .txt2{
+        animation: fadeInStoryR;
+        animation-duration: 1.5s;
+    }
+    .img3{
+        animation: fadeInStoryL;
+        animation-duration: 1.5s;
+    }
+    .txt3{
+        animation: fadeInStoryR;
+        animation-duration: 1.5s;
+    }
+    .img4{
+        animation: fadeInStoryL;
+        animation-duration: 1.5s;
+    }
+    .txt4{
+        animation: fadeInStoryR;
+        animation-duration: 1.5s;
+        font-size: 12px;
+        line-height: 24px;
+        flex-direction: column;
+        margin-bottom: 60px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .txt4 h3{
+        color: #eb8a40;
+    }
+    /* 섹션3. 클린뷰티 */
+    .clean_b{
+        width: 800px;
+        height: auto;
+        flex-direction: column;
+    }
+    .c_txt{
+        width: 100%;
+        margin: 0;
+    }
+    .c_icon{
+    }
+
+    /* 섹션4. 천연 주재료 */
+    .ingredient{
+        height: 300px;
+    }
+    .ing_wrap{
+        height: 300px;
+    }
+    .ing_wrap img{
+        position: absolute;
+        width: 10%;
+        height: auto;
+    }
+
+}
+
+/* 스마트폰 */
+@media all and (max-width:800px){ 
+    .main_bn{
+        background-image: url('../images/02.mobile/sub_page/main_bn.jpg');
+    
+    }
+    .main_bn .text{
+        left: 0;
+    }
+    .text h1{
+        font-size: 30px;
+        margin: 60px 0px 60px 20px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+
+    /* 섹션1. 슬로건 및 비전 */
+    .v_m{
+        margin: 60px 0;
+    }
+    .v_m li:first-child{
+        margin-right: unset;
+        margin-bottom: 60px;
+    }
+    .v_m .content h2{
+        position: absolute;
+        top: 25%;
+        right: 8px;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
+    .v_m .content p{
+        text-align: right;
+        position: absolute;
+        right: 8px;
+        top: 60%;
+        color: white;
+        font-size: 16px;
+    }
+    /* 섹션2. 스토리 */
+    .story2-inner{
+        width: 400px;
+    }
+    .s_img img{
+        width: 100%;
+    }
+
+    /* 섹션3. 클린뷰티 */
+    .clean_b{
+        width: 400px;
+    }
+    .c_txt li{
+        font-size: 18px;
+    }
+    .c_icon{
+        width: 200px;
+        height: 200px;
+    }
+    .c_icon img{
+        width: 50px;
+        height: 50px;
+    }
+    /* 아이콘들이 회전할 수 있도록! */
+
+    .c_icon img:first-child{
+        top: 75px;
+        left: 75px;
+    }
+    @keyframes myOrbit {
+        from { transform: rotate(0deg) translate(0,-100px) rotate(0deg); }
+        to   { transform: rotate(360deg) translate(0,-100px) rotate(-360deg); }
+    }
+    .c_icon img:nth-child(2){
+        top: 75px;
+        left: 75px;
+    }
+    @keyframes myOrbit2 {
+        from { transform: rotate(0deg) translate(75px,75px) rotate(0deg); }
+        to   { transform: rotate(360deg) translate(75px,75px) rotate(-360deg); }
+    }
+    .c_icon img:nth-child(3){
+        top: 75px;
+        left: 75px;
+    }
+    @keyframes myOrbit3 {
+        from { transform: rotate(0deg) translate(-75px,75px) rotate(0deg); }
+        to   { transform: rotate(360deg) translate(-75px,75px) rotate(-360deg); }
+    }
+    .c_icon h1{
+        font-size: 14px;
+    }
+
+    /* 섹션4. 천연 주재료 */
+    .ingredient{
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .ing_wrap{
+        width:100%;
+        height: 300px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .ing_wrap img{
+        position: absolute;
+        width: 20%;
+        height: auto;
+    }
+}
+

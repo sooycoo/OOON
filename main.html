@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오운 OOON</title>
+
+    <!-- 초기화코드 reset.css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 매터리얼 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
+
+    <!-- SWIPER : 슬라이드 탬플릿 가져올 것 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- 제이쿼리 쓸 것임 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="top_hd">
+            <div class="inner">
+                <a href="main.html" class="logo">
+                    <img src="./images/01.pc/01.mainpage/01.header/logo.png" alt="OOON">
+                </a>
+            
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#skin">피부진단</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">JOIN</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="./images/01.pc/01.mainpage/01.header/shopping_bag.png" alt="장바구니"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gnb">
+            <ul class="main_menu">
+                <li class="item">
+                    <div class="item_main">BRAND</div>
+                    <div class="item_sub">
+                        <ul class="inner">
+                            <li><a href="ooon_sub01.html">오운스토리</a></li>
+                            <li>히스토리</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item_main">BEST&NEW</div>
+                    <div class="item_sub">
+                        <ul class="inner">
+                            <li>신제품</li>
+                            <li>인기제품</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item_main">PRODUCTS</div>
+                    <div class="item_sub">
+                        <ul class="inner">
+                            <li>스킨케어</li>
+                            <li>메이크업</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item_main">REVIEW</div>
+                    <div class="item_sub">
+                        <ul class="inner">
+                            <li>포토리뷰</li>
+                            <li>텍스트리뷰</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item_main">EVENT</div>
+                </li>
+                <li class="item">
+                    <div class="item_main">Q&A</div>
+                </li>
+                <div class="search">
+                    <a href="javascipt:void(0)"><div class="material-icons">search</div></a>
+                </div>
+            </ul>
+        </div>
+        <!-- 검색버튼 모달창 class="search" -->
+        <div class="black_bg">
+            <div class="inner">
+                <div class="white_bg">
+                    <p>검색어를 입력하세요.</p>
+                    <span id=close class="material-symbols-rounded" style="cursor: pointer;">close</span>
+                    <input type="text">
+                    <div class="s_btn">search</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일 네비게이션 버튼-->
+        <ul id="m_navi">
+            <li id="search"><a href="javascipt:void(0)">
+                <span class="material-symbols-rounded">search</span>
+            </a></li>
+            <li id="m_btn"><a href="javascipt:void(0)">
+                <span class="material-symbols-rounded">menu</span>
+            </a></li>
+        </div>
+
+        <!-- 모바일 메뉴 활성화시 -->
+        <div id="m_navi_bg">
+            <div class="m_close">
+                <span class="material-symbols-rounded">close</span>
+            </div>
+        </div>
+
+        <div id="m_menu">
+            <div class="notice">
+                Welcome kit & coupon <br>
+                지금 가입하고 웰컴키트와 회원만의 혜택을 받아보세요. 
+            </div>
+            <ul class="m_sub">
+                <li>
+                    JOIN</li>
+                <li>LOGIN</li>
+            </ul>
+            <hr width="90%">
+            <ul class="m_main">
+                <li>
+                    <a href="#" class="m_item">BRAND</a>
+                    <ul class="m_navi_sub">
+                        <li><a href="./ooon_sub01.html">오운스토리</a></li>
+                        <li>히스토리</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="m_item">BEST&NEW</a>
+                    <ul class="m_navi_sub">
+                        <li>신제품</li>
+                        <li>인기제품</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="m_item">PRODUCTS</a>
+                    <ul class="m_navi_sub">
+                        <li>스킨케어</li>
+                        <li>메이크업</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr width="90%">
+            <ul class="m_main">
+                <li>
+                    <a href="#" class="m_item">REVIEW</a>
+                    <ul class="m_navi_sub">
+                        <li>포토리뷰</li>
+                        <li>텍스트리뷰</li>
+                    </ul>
+                </li>
+                <li>EVENT</li>
+                <li>Q&A</li>
+                <li>피부진단</li>
+            </ul>
+
+            <div class="m_logo">
+                <img src="./images/01.pc/01.mainpage/01.header/logo.png" alt="오운로고">
+            </div>
+        </div>
+    </header>
+
+    <!-- 이미지 슬라이드 -->
+    <main class="img_slide">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bn1">
+                        <div class="inner">
+                            <div class="left_txt">
+                                <span class="bold">내 피부</span>에 맞는<br>
+                                단 <span class="bold">하나의 제품</span>으로<br>
+                                <span class="bold">완성하는</span> 스킨케어
+                            </div>
+                            <div class="right">
+                                <img src="./images/01.pc/01.mainpage/02.mainbn/NEW.png" alt="NEW">
+                                <div class="right_txt">
+                                    <span class="big">On the ground</span><br>
+                                    온 더 그라운드<br>
+                                    올인원 에센스<br>
+                                    38,000원
+                                    50ml<br>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                MORE
+                            </div>
+                            <!-- 반응형 이미지 -->
+                            <div class="product_img">
+                                <img src="images/02.mobile/product.png" alt="에센스">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bn2">
+                        <div class="inner">
+                            <div class="left_txt"> 
+                                멜팅 버터 텍스처로<br>
+                                더욱 부드럽고 빠르게 흡수되는<br>
+                                <span class="bold">오운만의 특별한 핸드크림</span>을<br>
+                                만나보세요.
+                            </div>
+                            <div class="btn">
+                                MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bn3">
+                        <div class="inner">
+                            <div class="bn3_txt">
+                                <div class="left">오운,</div>
+                                <div class="right">진짜 <span style="color: #fdf1e1;">클린뷰티</span>의<br>시작</div>
+                                <!-- 모바일용 -->
+                                <div class="right_m">진짜<span style="color: #fdf1e1;">클린뷰티</span>의 시작</div>
+                            </div>
+                            <div class="btn">
+                                MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </main>
+
+    <!-- 바디 시작 -->
+    <!-- 섹션1. 피부진단 -->
+    <section id="skin">
+        <div class="skin_bg">
+            <h1>요즘, 피부 어떠신가요?<h1>
+            <p>간단한 피부진단을 통해 점검해보세요.</p>
+            <div class="btn"><a href="javascript:void(0)">1분 피부 진단하기 ></a></div>
+        </div>
+    </section>
+
+    <!-- 섹션2. 피부진단 시스템 -->
+    <section class="system">
+        <h1>오운 피부진단 시스템</h1>
+        <div class="step1">
+            <img src="images/01.pc/01.mainpage/03.skin_ins/ins1.png" alt="진단1">
+            <div class="explain">
+                <p>
+                    간단한 진단이 끝나면<br>
+                    오운만의 특별한 <b>맞춤형 처방전</b>을 받아보세요.
+                </p>
+            </div>
+        </div>
+        <div class="step2">
+            <div class="explain">
+                <p>
+                    나에게 정말 필요한 것만 엄선해<br>
+                    피부에 적합한 <b>스킨케어 방법을 제안</b>합니다.
+                </p>
+            </div>
+            <img src="images/01.pc/01.mainpage/03.skin_ins/ins2.png" alt="진단2">
+        </div>
+    </section>
+    <div class="blue">
+        <div class="blue_bg">
+            <p>피부건강의 청신호 <b>오운</b>이 지켜드릴게요!</p>
+        </div>
+    </div>
+
+    <!-- 섹션3. 베스트셀러-->
+    <section class="best_bg">
+        <div class="inner">
+            <div class="best">
+                <h1>BEST SELLER</h1>
+                <div class="tab">
+                    <ul>
+                        <li>
+                            <div class="com">
+                                <a href="javascript:void(0)">복합성</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dry">
+                                <a href="javascript:void(0)">건성</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="oily">
+                                <a href="javascript:void(0)">지성</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mid">
+                                <a href="javascript:void(0)">중성</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 복합성 -->
+                <div class="tab_ct">
+                    <div class="com_ct">
+                        <div class="first">
+                            <ul>
+                                <li>
+                                    <h2>1</h2>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/01.pc/01.mainpage/04.bestseller/01.com/1.png" alt="1위제품">
+                                    </a>
+                                </li>
+                                <li>
+                                    <h3>Vitamin E Toner</h3>
+                                </li>
+                                <li>
+                                    <p>
+                                        선인장추출물로 피부를 촉촉하게 정돈하고<br>
+                                        피부 밸런스를 지켜주는 약산성 토너
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>39,000원</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 모바일용 -->
+                        <div class="mobile_img">
+                            <p>
+                                오운의<br>
+                                가장 사랑받은<br>
+                                인기제품을 소개합니다.
+                            </p>
+                        </div>
+                        <div class="second">
+                            <ul>
+                                <li>
+                                    <h2>2</h2>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/01.pc/01.mainpage/04.bestseller/01.com/2.png" alt="2위제품">
+                                    </a>
+                                </li>
+                                <li>
+                                    <h3>Mineral water cream</h3>
+                                </li>
+                                <li>
+                                    <p>
+                                        수분 광채를 부여해 하루종일 수분을 머금은<br>
+                                        건강한 피부로 가꾸어 주는 수분 폭탄 크림
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>28,000원</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="third">
+                            <ul>
+                                <li>
+                                    <h2>3</h2>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/01.pc/01.mainpage/04.bestseller/01.com/3.png" alt="3위제품">
+                                    </a>
+                                </li>
+                                <li>
+                                    <h3>Sun essence</h3>
+                                </li>
+                                <li>
+                                    <p>
+                                        자외선으로부터 피부 수분을 유지시켜주고<br>
+                                        유해성분없이 순하게 바르는 선 에센스
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>29,000원</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 건성 자리 -->
+        <!-- 지성 자리-->
+        <!-- 중성 자리-->
+    </section>
+
+    <!-- 섹션4. 타임세일 -->
+    <section class="sale_bg">
+        <div class="sale">
+            <h1>TIME SALE</h1>
+            <!-- 카운트다운 -->
+            <div class="timer_container">
+                <div id="countdown"></div>
+            </div>
+            <!-- 모바일버전 카운트다운 -->
+            <div class="m_timer_container">
+                <div id="m_countdown"></div>
+            </div>
+            <img src="images/01.pc/01.mainpage/05.timesale/sale_product.png" alt="세일제품">
+            <div class="txt">
+                <ul>
+                    <li>
+                        <h3>Sun essence</h3>
+                    </li>
+                    <li>
+                        <p>
+                            자외선으로부터 피부 수분을 유지시켜주고,
+                            유해성분없이 순하게 바르는 선 에센스
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="price">
+                <s>29,000원</s>
+                <div class="s_price">
+                    <!-- 세일 이미지 -->
+                    <div class="s_img"></div>
+                    <p>23,200원</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션5. 브랜드스토리 -->
+    <section class="brand">
+        <div class="text">
+            <h1>OOON's <b>STORY</b></h1>
+            <p>
+                오운은 비슷한 소리의 own에서 자기 자신의 것이라는 의미를 차용하였고,<br>
+                신호 체계의 가장 기초적인 바탕인 신호등에서 영감을 받아 제작된 로고의 의미를 더해<br>
+                <br>
+                <b>"나 자신의 고유한 가치를 이해하고, 가장 기초적인 나만의 아름다움을 풀어나가자"</b><br>
+                <br>
+                라는 이념을 품고 있는 스킨케어 중심의 브랜드 입니다.<br>
+                <br>
+                오운은 건강하고 지속가능한 소비를 돕기위해 탄생했습니다.
+            </p>
+        </div>
+        <div class="btn">BRAND STORY ></div>
+    </section>
+
+    <!-- 하단 띠배너 -->
+    <div class="bt_bn">
+        <!-- 배경으로 삽입 -->
+        <div class="text">OOON's CLEAN BEAUTY SYSTEM</div>
+        <!-- 테두리에 맞춰서 돌아가는 텍스트 삽입 -->
+        <span class="move_txt">TESTED ON ANIMALS | ECO-FRIENDLY | SUSTAINABLE VEGAN | TESTED ON ANIMALS | ECO-FRIENDLY | SUSTAINABLE VEGAN | </span>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="ft_logo">
+            <img src="images/01.pc/01.mainpage/08.footer/logo_w.png" alt="오운 로고">
+        </div>
+        <div class="text">
+            <p class="info">상호명 :오운 | 대표자 : 최수영 | 주소 : 경기도 안양시 | 사업자등록번호 : 000-00-00000 | 통신판매업신고 : 제2000호-경기안양-00000호 |
+                개인정보보호책임자 : 최수영<br>
+                고객지원 031-0 0-0000 | 문의 sooochoi@naver.com | 주중 10:00 ~ 19:00 (점심시간 12:00~13:00 주말 및 공휴일 제외)</p>
+            <p class="copy">Copyright2022. OOON All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<!-- GSAP 애니메이션 라이브러리 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+</html>
